@@ -1,0 +1,25 @@
+body{
+    background-color: peru;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+h1{
+    color: rgb(27, 135, 207);
+    transition: color .5s ease-in-out;
+}
+
+.clicked{
+    color: #7f8c8d;
+}
+
+.form,
+.greetings{
+    display: none;
+}
+
+.showing{
+    display: block;
+}
