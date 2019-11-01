@@ -1,14 +1,13 @@
-body{
+/* body{
     background-color: peru;
-}
+} */
 
 .btn{
     cursor: pointer;
 }
 
-h1{
+body{
     color: rgb(27, 135, 207);
-    transition: color .5s ease-in-out;
 }
 
 .clicked{
