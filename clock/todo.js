@@ -4,7 +4,7 @@ const toDoForm = document.querySelector(".js-toDoForm"),
 
 const TODOS_LS = "toDos";
 
-function loadToDOs(){
+function loadToDos(){
     const toDos = localStorage.getItem(TODOS_LS);
     if(toDos !== null){
         
@@ -24,12 +24,13 @@ function paintToDo(text){
 
 function handleSubmit(event){
     event.preventDefault();
-    const currentValue = input.value;
+    const currentValue = toDoInput.value;
     paintToDo(currentValue);
+    toDoInput.value="";
 }
 
 function init(){
-    loadToDOs();
+    loadToDos();
     toDoForm.addEventListener("submit", handleSubmit);
 }
 
